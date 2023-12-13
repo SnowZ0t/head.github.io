@@ -18,7 +18,7 @@
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
 
-  const loader = new THREE.OBJLoader();
+  const loader = new THREE.ObjectLoader();
   loader.load('./manequin_with_cilinder.obj', function (object) {
     scene.add(object);
   });
