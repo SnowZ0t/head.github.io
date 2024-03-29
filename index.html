@@ -27,10 +27,11 @@
   document.body.appendChild(renderer.domElement);
 
   const loader = new OBJLoader();
-  loader.load('./manequin_with_cilinder.obj', function (object) {
+  loader.load('./manequin_with_cilinder.obj', function (object) object.position.set(1, -80, 1); {
     scene.add(object);
   });
 
+     
   camera.position.z = 800;
 
   function animate() {
