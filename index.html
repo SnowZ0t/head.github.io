@@ -27,7 +27,7 @@
   document.body.appendChild(renderer.domElement);
 
   const loader = new OBJLoader();
-  loader.load('./manequin_with_cilinder.obj', function (object) object.position.set(1, -80, 1); {
+  loader.load('./manequin_with_cilinder.obj', function (object) object.position.set(1, 1, 1); {
     scene.add(object);
   });
 
